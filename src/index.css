@@ -1,13 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	font-family: 'Raleway', sans-serif;
+	background-color: rgb(195, 221, 212);
+	color: #fff;
+	margin: 0;
+	padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+	margin: 30px;
+	background-image: url('./images/main_background.jpg');
+	background-size: cover;
+	border: 1px solid rgba(0, 0, 0, 0.9);
+	border-radius: 20px;
+	padding: 20px;
 }
+
+/* header card */
+
+.weatherFetchContainer {
+	text-align: center;
+	border-radius: 15px;
+	padding: 20px;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* forecast */
+
+.weatherForecastContainer {
+	padding: 10px;
+}
+
+.currentWeatherForecastContainer {
+	border: 1px solid rgba(39, 39, 39, 0.5);
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 15px;
+	margin: 5px;
+	padding: 5px;
+}
+
+.currentResultForecastContainer {
+	padding: 5px;
+	display: flex;
+}
+
+.currentWeatherForecastContainer{
+	overflow-x: scroll;
+	min-width: 100%;
+}
+
+.currentForecast {
+	padding: 5px;
+	margin: 5px;
+	border: 1px solid rgba(161, 161, 161, 0.5);
+	background-color: rgba(183, 183, 183, 0.2);
+	border-radius: 15px;
+	margin: auto;
+	min-width: 100px;
+	margin: 5px;
+}
+
+.currentForecast img {
+	width: 25px;
+}
+
+/* weather */
+
+.headerCard {
+	margin: 15px;
+}
+
+.cityName {
+	font-size: 30px;
+	margin: 0;
+}
+
+.feelsLike p,
+span {
+	line-height: 1em;
+}
+
+.feelsLike span {
+	color: rgba(255, 255, 255, 0.581);
+}
+
+/* main card */
+
+.mainCard {
+	display: flex;
+	padding: 7px;
+}
+
+.mainCard div {
+	margin: auto;
+}
+
+.tempMaxMin {
+	float: right;
+	color: rgb(255, 255, 255);
+}
+
+.tempMaxMin p {
+	line-height: 0.6em;
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.tempMaxMin .description {
+	color: rgb(255, 255, 255);
+}
+
+.mainCardTemp {
+	font-size: 60px;
+}
+
+/* footer card */
+
+.footerCard {
+	display: flex;
+}
+
+.footerCard div {
+	margin: auto;
+}
+
+.footerCard p {
+	font-size: 50px;
+	margin: 0;
+}
+
+.footerCard span {
+	color: rgba(255, 255, 255, 0.581);
+}
+
+/* dropdown selection */
+
+.selection>.divider {
+	color: white;
+}
+
+.menu.transition {
+	background: rgba(0, 0, 0, 0.7) !important;
+}
+
+.menu.transition>.item {
+	border: none !important;
+}
+
+.menu.transition>.item>.text {
+	color: rgba(255, 255, 255, 0.908)
+}
+
+.fluid.search.selection.dropdown {
+	border-radius: 15px !important;
+	margin-bottom: 10px;
+	width: auto;
+}
+
+.selection.search,
+.selection.search.visible>.search {
+	background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+.ui.search.dropdown.active>input.search,
+.ui.search.dropdown.visible>input.search {
+	color: white;
+}
+
+/* forecast */
